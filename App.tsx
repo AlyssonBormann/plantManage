@@ -12,7 +12,8 @@ import {
 import { ThemeProvider } from "styled-components";
 import theme from "./src/theme";
 
-import { Welcome } from "./src/Welcome";
+import { Welcome } from "./src/screens/Welcome";
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,7 +27,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light" translucent backgroundColor="transparent" />
-      <Welcome />
+      <Routes />
     </ThemeProvider>
   );
 }
