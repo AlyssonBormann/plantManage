@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="Plant Manager" src=".github/plantmanager.png" width="100%">
+  <img alt="Plant Manager" src="https://user-images.githubusercontent.com/11725888/160036361-d270d9af-658c-4999-b44c-c1098b470d1c.png" width="100%">
 </p>
 
 ## ✨ Tecnologias
