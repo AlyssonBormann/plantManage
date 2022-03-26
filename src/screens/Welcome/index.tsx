@@ -7,6 +7,7 @@ import { useTheme } from "styled-components";
 import { SCREENS } from "../../constants";
 import wateringImg from "../../assets/watering.png";
 import { Container, Wrapper, Title, SubTitle, Image, Button } from "./styles";
+import { EnviromentButton } from "../../components/EnviromentButton";
 
 export function Welcome() {
   const { COLORS } = useTheme();
