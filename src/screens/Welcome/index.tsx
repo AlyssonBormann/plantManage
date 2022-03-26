@@ -8,6 +8,7 @@ import { SCREENS } from "../../constants";
 import wateringImg from "../../assets/watering.png";
 import { Container, Wrapper, Title, SubTitle, Image, Button } from "./styles";
 import { EnviromentButton } from "../../components/EnviromentButton";
+import { PlantCardPrimary } from "../../components/PlantCardPrimary";
 
 export function Welcome() {
   const { COLORS } = useTheme();
