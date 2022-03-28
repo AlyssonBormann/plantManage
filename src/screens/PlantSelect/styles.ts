@@ -14,7 +14,7 @@ export const HeaderContainer = styled.View`
 export const Title = styled.Text`
   font-size: 17px;
   color: ${({ theme }) => theme.COLORS.heading};
-  font-family: ${({ theme }) => theme.COLORS.heading};
+  font-family: ${({ theme }) => theme.FONTS.heading};
   line-height: 20px;
   margin-top: 15px;
 `;
@@ -31,12 +31,12 @@ export const EnviromentList = styled(
     props: FlatListProps<EnviromentProps>
   ) => FlatList<EnviromentProps>
 )`
-  height: 40px;
-  justify-content: center;
+  height: 45px;
   padding-bottom: 5px;
   margin-left: 32px;
   margin: 32px 0;
   padding-right: 32px;
+  padding: 0 10px;
 `;
 
 export const Plants = styled.View`

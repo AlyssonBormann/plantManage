@@ -24,9 +24,11 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <ThemeProvider theme={theme}>
-      <StatusBar style="light" translucent backgroundColor="transparent" />
-      <Routes />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider theme={theme}>
+        <StatusBar style="light" translucent backgroundColor="transparent" />
+        <Routes />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }

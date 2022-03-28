@@ -11,7 +11,7 @@ export const Container = styled(RectButton)<Props>`
     background-color: ${active ? theme.COLORS.green_light : theme.COLORS.shape};
   `};
   width: 76px;
-  height: 40px;
+  height: 35px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;

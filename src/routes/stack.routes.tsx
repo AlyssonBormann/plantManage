@@ -5,6 +5,8 @@ import { SCREENS } from "../constants";
 
 import { Welcome } from "../screens/Welcome";
 import { UserIdentification } from "../screens/UserIdentification";
+import { Confirmation } from "../screens/Confirmation";
+import { PlantSelect } from "../screens/PlantSelect";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -16,6 +18,8 @@ export function StackRoutes() {
         name={SCREENS.UserIdentification}
         component={UserIdentification}
       />
+      <Screen name={SCREENS.Confirmation} component={Confirmation} />
+      <Screen name={SCREENS.PlantSelect} component={PlantSelect} />
     </Navigator>
   );
 }

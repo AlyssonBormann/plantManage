@@ -16,11 +16,7 @@ type Props = RectButtonProps & {
 export function PlantCardPrimary({ data, ...rest }: Props) {
   return (
     <Container {...rest}>
-      <SvgFromUri
-        uri="https://github.com/AlyssonBormann.png"
-        width={70}
-        height={70}
-      />
+      <SvgFromUri uri={data.photo} width={70} height={70} />
       <Text>{data.name}</Text>
     </Container>
   );

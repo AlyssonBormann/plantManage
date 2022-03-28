@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { ASYNCSTORAGE } from "../../constants";
@@ -17,11 +18,13 @@ export function Header() {
   }, []);
   return (
     <Container>
-      <>
+      <View>
         <Greeting>Olá,</Greeting>
         <UserName>{userName}</UserName>
-      </>
-      <Image source={{ uri: "https://github.com/AlyssonBormann.png" }} />
+      </View>
+      <Image
+        source={{ uri: "https://avatars.githubusercontent.com/u/11725888?v=4" }}
+      />
     </Container>
   );
 }

@@ -7,13 +7,13 @@ export const Container = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  margin-top: ${getStatusBarHeight()}px;
+  margin-top: ${getStatusBarHeight() + 10}px;
 `;
 
 export const Image = styled.Image`
   width: 70px;
   height: 70px;
-  border: 40px;
+  border-radius: 40px;
 `;
 
 export const Greeting = styled.Text`

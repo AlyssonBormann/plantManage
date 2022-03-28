@@ -6,6 +6,7 @@ export declare global {
       UserIdentification: undefined;
       PlantSave: PlantDTO;
       Confirmation: {};
+      PlantSelect: undefined;
     }
   }
 }

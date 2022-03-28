@@ -4,7 +4,7 @@ export type PlantDTO = {
   about: string;
   water_tips: string;
   photo: string;
-  enviroments: [string];
+  environments: [string];
   frequency: {
     times: number;
     repeat_every: string;
