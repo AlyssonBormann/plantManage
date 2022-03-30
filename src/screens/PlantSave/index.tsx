@@ -1,26 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { format, isBefore } from "date-fns";
 import { Alert } from "react-native";
-import {
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  View,
-  Image,
-  Text,
-} from "react-native";
+import { getBottomSpace } from "react-native-iphone-x-helper";
+import { StyleSheet } from "react-native";
 import { Platform } from "react-native";
 import { SvgFromUri } from "react-native-svg";
 import DateTimePicker, { Event } from "@react-native-community/datetimepicker";
 
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { savePlant } from "../../libs/storage";
-
 import waterdrop from "../../assets/waterdrop.png";
 import { Button } from "../../components/Button";
 
+import { savePlant } from "../../libs/storage";
 import { PlantDTO } from "../../dtos/PlantDTO";
+import { SCREENS } from "../../constants";
 
 import {
   Container,
@@ -36,8 +30,6 @@ import {
   DateTimePickerButton,
   DateTimePickerText,
 } from "./styles";
-import { getBottomSpace } from "react-native-iphone-x-helper";
-import { SCREENS } from "../../constants";
 
 export function PlantSave() {
   const [selectedDateTime, setSelectedDateTime] = useState(new Date());
@@ -78,7 +70,7 @@ export function PlantSave() {
           "Fique tranquilo que sempre vamos lembrar você de cuidar da sua plantinha com muito cuidado.",
         buttonTitle: "Muito Obrigado :D",
         icon: "hug",
-        nextScreen: "MyPlants",
+        nextScreen: SCREENS.MyPlants,
       });
     } catch {
       Alert.alert("Não foi possível salvar. 😢");
