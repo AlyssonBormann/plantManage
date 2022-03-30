@@ -13,6 +13,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./src/theme";
 
 import { Routes } from "./src/routes";
+import { PlantSave } from "./src/screens/PlantSave";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

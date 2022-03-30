@@ -1,10 +1,9 @@
 import styled from "styled-components/native";
 import { getBottomSpace } from "react-native-iphone-x-helper";
 
-export const ScrollListContainer = styled.ScrollView.attrs({
-  showsVerticalScrollIndicator: false,
-})`
+export const ScrollListContainer = styled.ScrollView`
   flex-grow: 1;
+  background-color: ${({ theme }) => theme.COLORS.shape};
 `;
 
 export const Container = styled.View`
@@ -15,17 +14,18 @@ export const Container = styled.View`
 
 export const PlantInfo = styled.View`
   flex: 1;
-  padding: 0 30px;
-  padding: 50px 0;
+  padding: 50px 30px;
+  align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.COLORS.shape};
 `;
 
-export const Controller = styled.Text`
-  background-color: ${({ theme }) => theme.COLORS.white};
-  padding: 0 20px;
+export const Controller = styled.View`
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: ${({ theme }) => theme.COLORS.white};
 `;
 
 export const PlantName = styled.Text`
@@ -37,7 +37,7 @@ export const PlantName = styled.Text`
 
 export const PlantAbout = styled.Text`
   text-align: center;
-  font-family: ${({ theme }) => theme.FONTS.heading};
+  font-family: ${({ theme }) => theme.FONTS.text};
   color: ${({ theme }) => theme.COLORS.heading};
   font-size: 17px;
   margin-top: 10px;
@@ -60,7 +60,6 @@ export const TipImage = styled.Image`
 `;
 
 export const TipText = styled.Text`
-  flex: 1;
   margin-left: 20px;
   font-family: ${({ theme }) => theme.FONTS.text};
   color: ${({ theme }) => theme.COLORS.blue};

@@ -10,6 +10,6 @@ export const Container = styled.TouchableOpacity`
 
 export const Text = styled.Text`
   font-size: 16px;
-  color: ${({ theme }) => theme.COLORS.heading};
+  color: ${({ theme }) => theme.COLORS.white};
   font-family: ${({ theme }) => theme.FONTS.heading};
 `;
