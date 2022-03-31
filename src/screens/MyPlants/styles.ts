@@ -39,7 +39,7 @@ export const Plants = styled.View`
 
 export const PlantsTitle = styled.Text`
   font-size: 24px;
-  font-family: ${({ theme }) => theme.COLORS.heading};
+  font-family: ${({ theme }) => theme.FONTS.heading};
   color: ${({ theme }) => theme.COLORS.heading};
   margin-top: 20px;
   margin-bottom: 20px;

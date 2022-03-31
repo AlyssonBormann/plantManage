@@ -8,6 +8,7 @@ import { UserIdentification } from "../screens/UserIdentification";
 import { Confirmation } from "../screens/Confirmation";
 import { PlantSelect } from "../screens/PlantSelect";
 import { PlantSave } from "../screens/PlantSave";
+import { MyPlants } from "../screens/MyPlants";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export function StackRoutes() {
       <Screen name={SCREENS.Confirmation} component={Confirmation} />
       <Screen name={SCREENS.PlantSelect} component={PlantSelect} />
       <Screen name={SCREENS.PlantSave} component={PlantSave} />
+      <Screen name={SCREENS.MyPlants} component={MyPlants} />
     </Navigator>
   );
 }

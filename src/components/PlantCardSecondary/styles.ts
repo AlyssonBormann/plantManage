@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
+import { RectButton } from "react-native-gesture-handler";
 
-export const Container = styled.View`
+export const Container = styled(RectButton)`
   width: 100%;
   padding: 25px 10px;
   border-radius: 20px;
@@ -36,7 +37,7 @@ export const Time = styled.Text`
   color: ${({ theme }) => theme.COLORS.body_dark};
 `;
 
-export const ButtonRemove = styled.View`
+export const ButtonRemove = styled(RectButton)`
   width: 100%;
   height: 85px;
   background-color: ${({ theme }) => theme.COLORS.red};
